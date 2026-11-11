@@ -32,15 +32,24 @@ python -m venv .venv
 .venv\Scripts\pythonw BuzzLight.pyw
 ```
 
+## Download
+
+Grab `BuzzLight-<version>.exe` from
+[Releases](https://github.com/TylerBuza/BuzzLight/releases). It's a single
+portable exe: put it anywhere and run it. **Start with Windows** (on the
+Settings page) remembers where it is, and if you move the exe, opening it
+once from the new spot updates the setting.
+
 ## Build the exe
 
 ```bat
 .venv\Scripts\pip install pyinstaller
-.venv\Scripts\python -m PyInstaller BuzzLight.spec --noconfirm
+.venv\Scripts\python -m PyInstaller BuzzLight-onefile.spec --noconfirm
 ```
 
-This produces `dist\BuzzLight\BuzzLight.exe`. Copy the whole `BuzzLight`
-folder anywhere and run the exe.
+This produces the single portable `dist\BuzzLight.exe` used for releases.
+`BuzzLight.spec` builds a one-folder version instead
+(`dist\BuzzLight\BuzzLight.exe`), which starts a little faster.
 
 ## Notes
 
