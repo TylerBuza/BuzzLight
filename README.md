@@ -65,3 +65,7 @@ folder anywhere and run the exe.
 | `buzzlight/layout.py` | Where each LED sits around the screen |
 | `buzzlight/controller.py` | App state: modes, power and brightness, settings persistence |
 | `buzzlight/ui/` | Qt window, LED preview, tray, theme |
+
+## License
+
+MIT. See [LICENSE](LICENSE).
